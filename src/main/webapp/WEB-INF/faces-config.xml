@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+        xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+        http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
+        version="2.3">
+
+    <managed-bean>
+        <managed-bean-name>projectEmployeeBean</managed-bean-name>
+        <managed-bean-class>service.ProjectEmployeeBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+        <managed-property>
+            <property-name>ProjectDao</property-name>
+            <value>#{projectDao}</value>
+        </managed-property>
+        <managed-property>
+            <property-name>employeeDao</property-name>
+            <value>#{employeeDao}</value>
+        </managed-property>
+    </managed-bean>
+
+</faces-config>
